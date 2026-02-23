@@ -1,1 +1,15 @@
-/* This will be the main site stylesheet. */
+/* Ensure the body takes up the full viewport height */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* Center the content container */
+.container {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center; /* Centers items vertically in the container */
+    align-items: center;    /* Centers items horizontally */
+    min-height: 100vh;      /* Makes container at least the height of the screen */
+    text-align: center;     /* Ensures text inside is also centered */
+}
