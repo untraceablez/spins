@@ -1,5 +1,6 @@
 /* Ensure the body takes up the full viewport height */
 body, html {
+    background-color: #181818;
     height: 100%;
     margin: 0;
 }
