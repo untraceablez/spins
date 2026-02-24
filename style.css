@@ -1,16 +1,16 @@
-/* Ensure the body takes up the full viewport height */
+/* Ensure the background takes up the full screen */
 body, html {
     background-color: #181818;
     height: 100%;
     margin: 0;
 }
 
-/* Center the content container */
+/* Center the container using Flexbox */
 .container {
     display: flex;
-    flex-direction: column; /* Stacks items vertically */
-    justify-content: center; /* Centers items vertically in the container */
+    flex-direction: column; /* Stacks the header, text, and player vertically */
+    justify-content: center; /* Centers items vertically */
     align-items: center;    /* Centers items horizontally */
-    min-height: 100vh;      /* Makes container at least the height of the screen */
-    text-align: center;     /* Ensures text inside is also centered */
+    min-height: 100vh;      /* Takes up the full height of the viewport */
+    text-align: center;
 }
