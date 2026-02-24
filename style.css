@@ -1,16 +1,18 @@
-/* Ensure the background takes up the full screen */
-body, html {
-    background-color: #181818;
+/* style.css */
+
+/* This will apply your background color to the whole page */
+html, body {
     height: 100%;
     margin: 0;
+    background-color: #181818; /* Your background color here */
 }
 
-/* Center the container using Flexbox */
+/* This centers the content in the middle of the screen */
 .container {
     display: flex;
-    flex-direction: column; /* Stacks the header, text, and player vertically */
-    justify-content: center; /* Centers items vertically */
-    align-items: center;    /* Centers items horizontally */
-    min-height: 100vh;      /* Takes up the full height of the viewport */
+    flex-direction: column; /* Stacks header, text, and player vertically */
+    justify-content: center; /* Centers vertically */
+    align-items: center;    /* Centers horizontally */
+    min-height: 100vh;      /* Makes container take up the full screen height */
     text-align: center;
 }
