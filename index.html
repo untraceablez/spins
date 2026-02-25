@@ -162,48 +162,47 @@
 <body onload="init();">
     <div class="container">
         <h1>Welcome to Spins!</h1>
-        <p>This is just a little microsite sharing my record collection as a 24/7 internet radio.</p>
+        <p>This is just a little microsite sharing my record collection as a 24/7 internet radio. It's still *very* much
+            a work in progress!</p>
         <div id="vinyl-player" class="container">
             <div id="controler">
-                    <div ondblclick="controlPopup.seekTo(0); infosPopup.seekTo(0);"
-                        onclick="controlPopup.seekTo(1); infosPopup.seekTo(0); stopTimer(); startTimer();"
-                        id="container">
-                        <div id="artBox" class="bubbleInfo">
-                            <img src="" id="art" alt="artwork" />
-                            <img src="img/case.png" id="jewel" alt="Jewel" />
-                        </div>
-                        <div id="textOverlay">
-                            <div id="artist2"> </div>
-                            <div id="album2"> </div>
-                        </div>
+                <div ondblclick="controlPopup.seekTo(0); infosPopup.seekTo(0);"
+                    onclick="controlPopup.seekTo(1); infosPopup.seekTo(0); stopTimer(); startTimer();" id="container">
+                    <div id="artBox" class="bubbleInfo">
+                        <img src="" id="art" alt="artwork" />
+                        <img src="img/case.png" id="jewel" alt="Jewel" />
                     </div>
-                    <div id="popupInfos">
-                        <div id="title"> </div>
-                        <div id="artist"></div>
-                        <div id="album"></div>
+                    <div id="textOverlay">
+                        <div id="artist2"> </div>
+                        <div id="album2"> </div>
                     </div>
-                    <div id="popupControls">
-                        <div id="title2"> </div>
-                        <!--><div id="albumArtist"><span id="artist2"></span> - <span id="album2"></span></div>-->
-                        <div id="rating">
-                            <span id="controls">
-                                <a href="#"
-                                    onClick="Player.previousTrack(); stopTimer(); startTimer();return false;"></a><a
-                                    href="#" onClick="playPause(); stopTimer(); startTimer();return false;"
-                                    id="playLink"></a><a href="#"
-                                    onClick="Player.nextTrack(); stopTimer(); startTimer(); return false;"></a>
-                            </span>
-                            <a id="star1" href="#" onClick="setRating(20);stopTimer(); startTimer();return false;">☆</a>
-                            <a id="star2" href="#" onClick="setRating(40);stopTimer(); startTimer();return false;">☆</a>
-                            <a id="star3" href="#" onClick="setRating(60);stopTimer(); startTimer();return false;">☆</a>
-                            <a id="star4" href="#" onClick="setRating(80);stopTimer(); startTimer();return false;">☆</a>
-                            <a id="star5" href="#"
-                                onClick="setRating(100);stopTimer(); startTimer();return false;">☆</a>
-                        </div>
+                </div>
+                <div id="popupInfos">
+                    <div id="title"> </div>
+                    <div id="artist"></div>
+                    <div id="album"></div>
+                </div>
+                <div id="popupControls">
+                    <div id="title2"> </div>
+                    <!--><div id="albumArtist"><span id="artist2"></span> - <span id="album2"></span></div>-->
+                    <div id="rating">
+                        <span id="controls">
+                            <a href="#"
+                                onClick="Player.previousTrack(); stopTimer(); startTimer();return false;"></a><a
+                                href="#" onClick="playPause(); stopTimer(); startTimer();return false;"
+                                id="playLink"></a><a href="#"
+                                onClick="Player.nextTrack(); stopTimer(); startTimer(); return false;"></a>
+                        </span>
+                        <a id="star1" href="#" onClick="setRating(20);stopTimer(); startTimer();return false;">☆</a>
+                        <a id="star2" href="#" onClick="setRating(40);stopTimer(); startTimer();return false;">☆</a>
+                        <a id="star3" href="#" onClick="setRating(60);stopTimer(); startTimer();return false;">☆</a>
+                        <a id="star4" href="#" onClick="setRating(80);stopTimer(); startTimer();return false;">☆</a>
+                        <a id="star5" href="#" onClick="setRating(100);stopTimer(); startTimer();return false;">☆</a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <p>Hello world!</p>
     <footer>Created by Taylor Cohron &copy; 2026</footer>
