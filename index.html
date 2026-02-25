@@ -1,13 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html>
 <html lang="en">
-<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spins</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="scripts/animator.js" type="text/javascript"></script>
     <script type="text/javascript">
         oldPlayState = 0;
@@ -161,14 +159,12 @@
     </script>
 </head>
 
-<body>
+<body onload="init();">
     <div class="container">
         <h1>Welcome to Spins!</h1>
         <p>This is just a little microsite sharing my record collection as a 24/7 internet radio.</p>
         <div id="vinyl-player" class="container">
-
-            <body onLoad="init();">
-                <div id="controler">
+            <div id="controler">
                     <div ondblclick="controlPopup.seekTo(0); infosPopup.seekTo(0);"
                         onclick="controlPopup.seekTo(1); infosPopup.seekTo(0); stopTimer(); startTimer();"
                         id="container">
@@ -206,7 +202,7 @@
                         </div>
                     </div>
                 </div>
-            </body>
+            </div>
         </div>
     </div>
     <p>Hello world!</p>
