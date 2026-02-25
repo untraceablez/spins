@@ -41,6 +41,14 @@ a {
     cursor: default;
 }
 
+#vinyl-player {
+    position: relative;
+    width: 512px;
+    height: 650px;
+    min-height: auto;
+    margin: 0 auto;
+}
+
 #container {
     position: absolute;
     top: 115px;
