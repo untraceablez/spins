@@ -130,7 +130,7 @@ a {
 
 #popupInfos {
     position: absolute;
-    background: transparent url(popup.png) top left no-repeat;
+    background: transparent url(../img/popup.png) top left no-repeat;
     width: 290px;
     height: 96px;
     /*	display: none;*/
@@ -147,7 +147,7 @@ a {
     left: 43px;
     right: 0px;
     text-align: center;
-    background: transparent url(popup.png) top left no-repeat;
+    background: transparent url(../img/popup.png) top left no-repeat;
     width: 290px;
     height: 96px;
     /*	display: none;*/

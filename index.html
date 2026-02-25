@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spins</title>
     <link rel="stylesheet" href="style.css">
-    <script src="animator.js" type="text/javascript"></script>
+    <script src="scripts/animator.js" type="text/javascript"></script>
     <script type="text/javascript">
         oldPlayState = 0;
         function $(id) { return document.getElementById(id); }
@@ -50,12 +50,12 @@
         }
         function artworkUpdate(artURL) {
             if (artURL == "") {
-                $('art').src = "noartwork.png";
+                $('art').src = "img/noartwork.png";
                 $('textOverlay').style.display = '';
             }
             else {
                 $('art').src = artURL;
-                $('artBox').src = 'case.png';
+                $('artBox').src = 'img/case.png';
                 $('textOverlay').style.display = 'none';
             }
         }
@@ -174,7 +174,7 @@
                         id="container">
                         <div id="artBox" class="bubbleInfo">
                             <img src="" id="art" alt="artwork" />
-                            <img src="case.png" id="jewel" alt="Jewel" />
+                            <img src="img/case.png" id="jewel" alt="Jewel" />
                         </div>
                         <div id="textOverlay">
                             <div id="artist2"> </div>
