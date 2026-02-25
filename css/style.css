@@ -1,0 +1,220 @@
+/* style.css */
+
+/* This will apply your background color to the whole page */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #181818;
+    /* Your background color here */
+}
+
+/* This centers the content in the middle of the screen */
+.container {
+    display: flex;
+    flex-direction: column;
+    /* Stacks header, text, and player vertically */
+    justify-content: center;
+    /* Centers vertically */
+    align-items: center;
+    /* Centers horizontally */
+    min-height: 100vh;
+    /* Makes container take up the full screen height */
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    font-family: 'Helvetica';
+    color: #fff;
+    text-shadow: #000 0px 1px 3px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16.5pt;
+    overflow: hidden;
+    /*		background: #666;*/
+}
+
+a {
+    cursor: default;
+}
+
+#container {
+    position: absolute;
+    top: 115px;
+    left: 0px;
+    width: 512px;
+    height: 512px;
+}
+
+#controller {
+    opacity: 45;
+}
+
+#artBox {
+    width: 432px;
+    height: 409px;
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    /*		border: 1px solid red;*/
+}
+
+#art {
+    position: absolute;
+    /*		background: #f90;*/
+    left: 9px;
+    top: 1px;
+    height: 275px;
+    width: 300px;
+}
+
+#jewel {
+    position: absolute;
+    top: -60px;
+    left: -41px;
+    width: 432px;
+    height: 396px;
+}
+
+#album,
+#album2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "Helvetica Neue";
+    font-weight: light;
+    font-size: 7pt;
+    text-align: center;
+
+}
+
+#artist,
+#artist2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    font-size: 7pt;
+    text-align: center;
+}
+
+#albumArtist {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+#title,
+#title2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    font-size: 9pt;
+    text-align: center;
+}
+
+.bubbleInfo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+#popupInfos {
+    position: absolute;
+    background: transparent url(popup.png) top left no-repeat;
+    width: 290px;
+    height: 96px;
+    /*	display: none;*/
+    opacity: 0;
+    font-size: 10pt;
+    padding: -20px 0px;
+    text-align: center;
+    /*	border: 1px solid red;*/
+}
+
+#popupControls {
+    position: absolute;
+    top: 41px;
+    left: 43px;
+    right: 0px;
+    text-align: center;
+    background: transparent url(popup.png) top left no-repeat;
+    width: 290px;
+    height: 96px;
+    /*	display: none;*/
+    opacity: 0;
+    font-size: 10pt;
+    padding: 14px 10px;
+    /*	border: 1px solid red;*/
+}
+
+#rating {
+    padding: 12px 0px 25px 0px;
+}
+
+#rating a {
+    font-size: 10pt;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0px 1px 3px black;
+    text-align: center;
+}
+
+#controls {
+    font-family: Webdings;
+}
+
+#controls a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: 0px 1px 2px #111;
+    text-align: center;
+
+}
+
+#textOverlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    z-index: 999;
+    color: #452400;
+    text-shadow: 0px 0px 1px #c60;
+    /*	letter-spacing: 1px;*/
+    line-height: 0px;
+    text-transform: uppercase;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    /*	border: 1px solid red;*/
+    text-align: center;
+}
+
+#album2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "Helvetica Neue";
+    font-weight: light;
+    font-size: 5pt;
+    text-align: center;
+}
+
+#artist2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    font-size: 8pt;
+    text-align: center;
+}
